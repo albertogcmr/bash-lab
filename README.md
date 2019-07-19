@@ -27,7 +27,7 @@ exercices  inputs  lorem  lorem-copy  modules  outputs  README.md
 
 * Copia el archivo `sed.txt` dentro de la carpeta lorem a la carpeta lorem-copy. 
 
-* Copia los otros dos archivos de la carpeta lorem a la carpeta lorem-copy en una sola linea mediante el pipe `;`. 
+* Copia los otros dos archivos de la carpeta lorem a la carpeta lorem-copy en una sola linea mediante `;`. 
 
 * Muestra el contenido del archivo `sed.txt` dentro de la carpeta lorem.
 
