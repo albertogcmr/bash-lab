@@ -24,4 +24,5 @@ NAME='ale'
 echo $NAME
 mkdir $NAME
 rmdir $NAME
+ls lorem 
 for FILE in $(ls lorem); do echo -n $FILE | wc -c; done
