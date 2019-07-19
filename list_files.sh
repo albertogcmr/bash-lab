@@ -18,10 +18,3 @@ find . -iname 'lorem*.*' | wc -l
 grep 'et' lorem/at.txt
 grep -o 'et' lorem/at.txt | wc -l
 grep -o 'et' lorem-copy/*.txt | wc -l
-
-Bonus
-NAME='ale'
-echo $NAME
-mkdir $NAME
-rmdir $NAME
-for FILE in $(ls lorem); do echo -n $FILE | wc -c; done
