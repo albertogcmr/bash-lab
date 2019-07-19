@@ -1,8 +1,5 @@
 # Bash exercices
 
-## Links to remove
-https://linuxhint.com/30_bash_script_examples/
-https://www.tutorialspoint.com/unix/
 
 ## Intro
 
