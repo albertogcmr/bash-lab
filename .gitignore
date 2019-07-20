@@ -1,2 +1,6 @@
 # solutions 
 solution.txt
+.DS_Store
+.list_files.sh.swn
+.list_files.sh.swo
+.list_files.sh.swp

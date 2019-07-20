@@ -25,7 +25,7 @@ exercices  inputs  lorem  lorem-copy  modules  outputs  README.md
 
 * Elimina ese directorio.
 
-* Copia el archivo `sed.txt` dentro de la carpeta lorem a la carpeta lorem-copy. 
+* Copia el archivo `sed.txt` dentro de la carpeta lorem a la carpeta lorem-copy.
 
 * Copia los otros dos archivos de la carpeta lorem a la carpeta lorem-copy en una sola linea mediante el pipe `;`. 
 
@@ -33,7 +33,7 @@ exercices  inputs  lorem  lorem-copy  modules  outputs  README.md
 
 * Muestra el contenido de los archivos `at.txt` y `lorem.txt` dentro de la carpeta lorem. 
 
-* Visualiza las primeras 3 linas del archivo `sed.txt` dentro de la carpeta lorem-copy 
+* Visualiza las primeras 3 linas del archivo `sed.txt` dentro de la carpeta lorem-copy
 
 * Visualiza las ultimas 3 linas del archivo `sed.txt` dentro de la carpeta lorem-copy 
 
@@ -41,7 +41,7 @@ exercices  inputs  lorem  lorem-copy  modules  outputs  README.md
 
 * Visualiza las últimas 3 linas del archivo `sed.txt` dentro de la carpeta lorem-copy. Deberías ver ahora `Homo homini lupus.`. 
 
-* Sustituye todas las apariciones de `et` por `ET` del archivo `at.txt` dentro de la carpeta lorem a la carpeta lorem-copy. Deberás usar `sed`. 
+* Sustituye todas las apariciones de `et` por `ET` del archivo `at.txt` dentro de la carpeta lorem-copy. Deberás usar `sed`. 
 
 * Encuentra al usuario activo en el sistema.
 
