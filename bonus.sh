@@ -4,7 +4,8 @@ read name
 echo "Tu nombre es $name"
 mkdir $name
 rm -d $name
-for file in ls lorem
+for f in lorem/*
 do
-    echo "epa"
+    FILE="$(basename -- $f)" 
+    echo "$FILE, len: ${#FILE}"
 done
