@@ -1,0 +1,47 @@
+1) echo "Hello World"
+
+2)  mkdir "new_dir"
+
+3) rmdir "new_dir"
+
+4) cp lorem/sed.txt lorem-copy
+
+5) cp lorem/at.txt lorem-copy ; cp lorem/lorem.txt lorem-copy
+
+6) head -n3 lorem/sed.txt
+
+7) tail -n3 lorem/sed.txt
+
+8) echo "Homo homini lupus" >> lorem-copy/sed.txt
+
+9) open lorem-copy/sed.txt
+
+10) sed 's/et/ET/g' lorem/at.txt > lorem-cfor fopy/at.txt
+
+11) who
+
+12) pwd
+
+13) find lorem ".txt"
+
+14) wc -l lorem/sed.txt
+
+15) find . -name "lorem*"
+
+16) grep -wc "et" lorem/at.txt
+
+17) grep -wc "et" lorem-copy/*
+
+Ficheros bash:
+
+vi list_files.sh; sudo vi /etc/list_files.sh; ls; chmod a+x list_files.sh; bash list_files.sh
+
+Bonus: 
+
+. read name; Marco; echo $name 
+
+. mkdir $name 
+
+. rmdir $name
+
+. for f in ls lorem; do echo -n $f | wc -c; done
