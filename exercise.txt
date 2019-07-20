@@ -19,3 +19,15 @@ Encuentra todas las apariciones de et en at.txt dentro de la carpeta lorem: grep
 Cuenta el número de apariciones del string et en at.txt dentro de la carpeta lorem. Para ello debes obtener sólo los string buscados y contar las lineas: grep -o et lorem/at.txt | uniq -c
 Cuenta el número de apariciones del string et en todos los archivos del directorio lorem-copy: grep -o et lorem-copy/*txt | uniq -c
 
+Bonus
+Almacena en una variable name tu nombre mediante el comando read: vi name       read Alejandro     echo "Hello $Alejandro" 
+Imprime esa variable: bash name      Alejandro 
+Crea un directorio nuevo que se llame como el contenido de la variable: mkdir $name
+Elimina ese directorio. rm -rf $name
+Por cada archivo dentro de la carpeta lorem imprime el número de carácteres que tienen sus nombres. Intenta primero mostrar los archivos mediante un bucle for. Luego calcula la longitud de cada elemento de la iteración: for n in lorem/; do ; done.  NI IDEA DE COMO HACERLO
+
+
+
+
+
+
