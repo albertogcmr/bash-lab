@@ -11,7 +11,7 @@ echo "Homo homini lupus" >> lorem-copy/sed.txt
 tail -3 lorem-copy/sed.txt
 sed -i '' 's/et/ET/g' lorem/at.txt
 who
-
+pwd
 find lorem -iname "*.txt"
 cat lorem/sed.txt | wc -l
 find . -name 'lorem*' | wc -l
