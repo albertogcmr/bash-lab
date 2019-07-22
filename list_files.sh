@@ -24,7 +24,7 @@
 
 13) who
 
-14)
+14) pwd
 
 15) find lorem -iname "*.txt"
 
