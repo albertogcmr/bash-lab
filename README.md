@@ -37,9 +37,7 @@ cp lorem/sed.txt lorem-copy/sed.txt
 
 * Copia los otros dos archivos de la carpeta lorem a la carpeta lorem-copy en una sola linea mediante `;`. 
 
-$ cp -r lorem/lorem.txt lorem-copy/lorem.txt; cp -r lorem/at.txt lorem-copy/at.txt
-
-cp -r lorem/at.txt;lorem/lorem.txt lorem-copy/at.txt;lorem-copy/lorem.txt
+cp -r lorem/lorem.txt lorem-copy/lorem.txt; cp -r lorem/at.txt lorem-copy/at.txt
 
 * Muestra el contenido del archivo `sed.txt` dentro de la carpeta lorem.
 
