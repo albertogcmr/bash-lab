@@ -87,7 +87,7 @@ exercices  inputs  lorem  lorem-copy  modules  outputs  README.md
 
 * Cuenta el número de **archivos** que empiezan por `lorem` que están en este directorio y en directorios internos
 
- 
+ find . -type f -name "lorem*"
 
 * Encuentra todas las apariciones de `et` en `at.txt` dentro de la carpeta lorem.
 
@@ -129,11 +129,19 @@ exercices  inputs  lorem  lorem-copy  modules  outputs  README.md
 
 * Almacena en una variable `name` tu nombre mediante el comando `read`.
 
+ read NAME (Le pongo hola por ejemplo)
+
 * Imprime esa variable.
+
+ echo $NAME
 
 * Crea un directorio nuevo que se llame como el contenido de la variable `name`.
 
+ mkdir $NAME
+
 * Elimina ese directorio. 
+
+ rmdir $NAME
 
 * Por cada archivo dentro de la carpeta `lorem` imprime el número de carácteres que tienen sus nombres. Intenta primero mostrar los archivos mediante un bucle for. Luego calcula la longitud de cada elemento de la iteración. 
 1. Imprime los ficheros
