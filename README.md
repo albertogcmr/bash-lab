@@ -20,44 +20,86 @@ exercices  inputs  lorem  lorem-copy  modules  outputs  README.md
 ## Ejercicios
 
 * Imprime en consola "Hello World".
+ 
+ echo Hello World
 
 * Crea un directorio nuevo llamado `new_dir`.
 
+ mkdir new_dir
+
 * Elimina ese directorio.
 
+ rmdir new_dir
+
 * Copia el archivo `sed.txt` dentro de la carpeta lorem a la carpeta lorem-copy. 
+ 
+  cp sed.txt lorem-copy
 
 * Copia los otros dos archivos de la carpeta lorem a la carpeta lorem-copy en una sola linea mediante `;`. 
+ 
+  Situandome en el directorio principal.
+  cp lorem/{at.txt,lorem.txt} lorem-copy/
 
 * Muestra el contenido del archivo `sed.txt` dentro de la carpeta lorem.
+ 
+ En la carpeta donde esta el el archivo.
+ cat sed.txt
 
 * Muestra el contenido de los archivos `at.txt` y `lorem.txt` dentro de la carpeta lorem. 
 
+ cat {at.txt,lorem.txt}
+
 * Visualiza las primeras 3 linas del archivo `sed.txt` dentro de la carpeta lorem-copy 
+
+ head -n 3 sed.txt
 
 * Visualiza las ultimas 3 linas del archivo `sed.txt` dentro de la carpeta lorem-copy 
 
+ tail -n 3 sed.txt
+
 * Añade `Homo homini lupus.` al final de archivo `sed.txt` dentro de la carpeta lorem-copy. 
+
+ echo "Homo homini lupus" >> sed.txt
 
 * Visualiza las últimas 3 linas del archivo `sed.txt` dentro de la carpeta lorem-copy. Deberías ver ahora `Homo homini lupus.`. 
 
+ tail -n 3 sed.txt
+
 * Sustituye todas las apariciones de `et` por `ET` del archivo `at.txt` dentro de la carpeta lorem-copy. Deberás usar `sed`. 
+
+ sed -i "s/et/ET/g" "at.txt"
 
 * Encuentra al usuario activo en el sistema.
 
+ w
+
 * Encuentra dónde estás en tu sistema de ficheros.
+
+ pwd
 
 * Lista los archivos que terminan por `.txt` en la carpeta lorem.
 
+ ls *.txt*
+
 * Cuenta el número de lineas que tiene el archivo `sed.txt` dentro de la carpeta lorem. Tendrás que encadenar `cat` y `wc` mediante el pipe `|`. 
+
+ cat sed.txt|wc -l (9)
 
 * Cuenta el número de **archivos** que empiezan por `lorem` que están en este directorio y en directorios internos
 
+ 
+
 * Encuentra todas las apariciones de `et` en `at.txt` dentro de la carpeta lorem.
+
+ grep "et" at.txt (me lo muestra 10 veces)
 
 * Cuenta el número de apariciones del string `et` en `at.txt` dentro de la carpeta lorem. Para ello debes obtener sólo los string buscados y contar las lineas. 
 
+ grep -c "et" at.txt (7)
+ 
 *  Cuenta el número de apariciones del string `et` en todos los archivos del directorio lorem-copy. 
+
+ grep -c "et" {at.txt,lorem.txt,sed.txt} Total(11)
 
 
 ## Ficheros bash
