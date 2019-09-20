@@ -61,11 +61,15 @@ echo "Home homini lupus" >> ./lorem-copy/sed.txt
 
 * Visualiza las últimas 3 linas del archivo `sed.txt` dentro de la carpeta lorem-copy. Deberías ver ahora `Homo homini lupus.`. 
 
+<<<<<<< HEAD
 tail -3 ./lorem-copy/sed.txt
 
 * Sustituye todas las apariciones de `et` por `ET` del archivo `at.txt` dentro de la carpeta lorem-copy. Deberás usar `sed`. 
 
 sed 's/et/ET/' lorem-copy/at.txt
+=======
+* Sustituye todas las apariciones de `et` por `ET` del archivo `at.txt` dentro de la carpeta lorem-copy. Deberás usar `sed`. 
+>>>>>>> bad9120c989bcb5a0c0746a7f4c8365b6b0bbfae
 
 * Encuentra al usuario activo en el sistema.
 
