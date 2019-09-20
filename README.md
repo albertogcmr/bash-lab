@@ -21,15 +21,17 @@ exercices  inputs  lorem  lorem-copy  modules  outputs  README.md
 
 * Imprime en consola "Hello World".
 
-echo Hello World
+#!/bin/bash echo Hello World
+echo Hello World 
+
 
 * Crea un directorio nuevo llamado `new_dir`.
 
-mkdir "new_dir"
+mkdir new_dir
 
 * Elimina ese directorio.
 
-rmdir new_dir/
+rm -r new_dir
 
 * Copia el archivo `sed.txt` dentro de la carpeta lorem a la carpeta lorem-copy. 
 
@@ -37,67 +39,81 @@ cp lorem/sed.txt lorem-copy/sed.txt
 
 * Copia los otros dos archivos de la carpeta lorem a la carpeta lorem-copy en una sola linea mediante `;`. 
 
-cp -r lorem/lorem.txt lorem-copy/lorem.txt; cp -r lorem/at.txt lorem-copy/at.txt
+cp lorem/at.txt lorem-copy/;cp lorem/lorem.txt lorem-copy/
 
 * Muestra el contenido del archivo `sed.txt` dentro de la carpeta lorem.
 
 cat lorem/sed.txt
 
+
 * Muestra el contenido de los archivos `at.txt` y `lorem.txt` dentro de la carpeta lorem. 
 
-cat lorem/lorem.txt; cat lorem/at.txt
+cat lorem/{at.txt,lorem.txt}
 
 * Visualiza las primeras 3 linas del archivo `sed.txt` dentro de la carpeta lorem-copy 
 
-head -3 ./lorem-copy/sed.txt
+head -n3 sed.txt
 
 * Visualiza las ultimas 3 linas del archivo `sed.txt` dentro de la carpeta lorem-copy 
 
-tail -3 ./lorem-copy/sed.txt
+tail -3 sed.txt
+
 
 * Añade `Homo homini lupus.` al final de archivo `sed.txt` dentro de la carpeta lorem-copy. 
 
-echo "Home homini lupus" >> ./lorem-copy/sed.txt
+echo Homo homini lupus. >>sed.txt
+
 
 * Visualiza las últimas 3 linas del archivo `sed.txt` dentro de la carpeta lorem-copy. Deberías ver ahora `Homo homini lupus.`. 
 
-<<<<<<< HEAD
-tail -3 ./lorem-copy/sed.txt
+tail -n '3'./lorem/sed.txt
+
 
 * Sustituye todas las apariciones de `et` por `ET` del archivo `at.txt` dentro de la carpeta lorem-copy. Deberás usar `sed`. 
 
-sed 's/et/ET/' lorem-copy/at.txt
-=======
-* Sustituye todas las apariciones de `et` por `ET` del archivo `at.txt` dentro de la carpeta lorem-copy. Deberás usar `sed`. 
->>>>>>> bad9120c989bcb5a0c0746a7f4c8365b6b0bbfae
+sed 's/et/ET/g' lorem-copy/at.txt
+
 
 * Encuentra al usuario activo en el sistema.
 
 whoami
 
 * Encuentra dónde estás en tu sistema de ficheros.
+
 pwd
 
 * Lista los archivos que terminan por `.txt` en la carpeta lorem.
-find ./lorem-copy/ -name '*.txt'
+
+ls lorem/*.txt
+
 
 * Cuenta el número de lineas que tiene el archivo `sed.txt` dentro de la carpeta lorem. Tendrás que encadenar `cat` y `wc` mediante el pipe `|`. 
-cat lorem-copy/sed.txt | wc -l
+
+wc -l lorem/sed.txt
 
 
 * Cuenta el número de **archivos** que empiezan por `lorem` que están en este directorio y en directorios internos
-find . -type f -name "lorem*"
+
+find lorem* -type f | wc -l
+
+
 
 * Encuentra todas las apariciones de `et` en `at.txt` dentro de la carpeta lorem.
-grep -o -i et lorem-copy/at.txt
+
+grep et lorem/at.txt
+
+
 
 * Cuenta el número de apariciones del string `et` en `at.txt` dentro de la carpeta lorem. Para ello debes obtener sólo los string buscados y contar las lineas. 
+
+
 grep -o -i et lorem-copy/at.txt | wc -l
 
 
 *  Cuenta el número de apariciones del string `et` en todos los archivos del directorio lorem-copy. 
 
 find -name "*.txt" | xargs grep -E 'et' | wc -l
+
 
 ## Ficheros bash
 
@@ -125,9 +141,9 @@ exercices  inputs  lorem  lorem-copy  modules  outputs  README.md
 ## Bonus
 
 * Almacena en una variable `name` tu nombre mediante el comando `read`.
-read NAME
 
-* Imprime esa variable.
+read NAME
+* Imprime a variable.
 
 echo $NAME
 
@@ -143,3 +159,6 @@ rmdir $NAME
 1. Imprime los ficheros
 2. Imprime las longitudes de los nombres de los ficheros. 
 
+* Abrir todos los ficheros .py => 
+
+ls -la|grep -e '*.py' | wc -l
