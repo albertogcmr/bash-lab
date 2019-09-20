@@ -69,31 +69,41 @@ find . -type f -name "lorem*" | wc -l
 
 # Encuentra todas las apariciones de et en at.txt dentro de la carpeta lorem.
 
-
+grep et lorem/at.txt
 
 # Cuenta el número de apariciones del string et en at.txt dentro de la carpeta lorem. Para ello debes obtener sólo los string buscados y contar las lineas.
 
-
+grep -o et lorem/at.txt | wc -l
 
 # Cuenta el número de apariciones del string et en todos los archivos del directorio lorem-copy.
 
-
+grep -oi et lorem-copy/* | wc -l
 
 # BONUS
 
 
 # Almacena en una variable name tu nombre mediante el comando read.
 
+read name
 
 # Imprime esa variable.
 
+echo $name
 
 # Crea un directorio nuevo que se llame como el contenido de la variable name.
 
+mkdir $name
 
 # Elimina ese directorio.
 
+rm -r $name
 
 # Por cada archivo dentro de la carpeta lorem imprime el número de carácteres que tienen sus nombres. 
 # Intenta primero mostrar los archivos mediante un bucle for. Luego calcula la longitud de cada elemento de la iteración.
 # Imprime los ficheros / Imprime las longitudes de los nombres de los ficheros.
+
+for file in lorem/*;
+do
+basename $file;
+printf $(basename $file) | wc -m;
+done
