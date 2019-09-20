@@ -53,3 +53,7 @@ do
 basename $file;
 printf $(basename $file) | wc -m;
 done
+
+## Bonus: Count all .py files in a directory:
+
+find -type f -name "*.py" | wc -l
