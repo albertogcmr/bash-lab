@@ -79,12 +79,12 @@ grep -o et lorem/at.txt | wc -l
 
 grep -oi et lorem-copy/* | wc -l
 
+
 # BONUS
 
+# Almacena en una variable name tu nombre mediante el comando read. No sé si esto es exactamente lo que se pedía
 
-# Almacena en una variable name tu nombre mediante el comando read.
-
-read name
+read -p "Enter your name:" name
 
 # Imprime esa variable.
 
