@@ -1,4 +1,4 @@
-# Bash exercices
+# Bash Lab
 
 ## Intro
 
