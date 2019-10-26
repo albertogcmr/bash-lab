@@ -108,3 +108,7 @@ Intenta primero mostrar los archivos mediante un bucle for
 * Muestra información sobre tu procesador por pantalla
 
 * Crea 3 alias y haz que estén disponibles cada vez que inicias sesión
+
+* Comprime las carpetas lorem y lorem-copy en un archivo llamado lorem-compressed.tar.gz
+
+* Descomprime el archivo lorem-compressed.tar.gz en la carpeta lorem-uncompressed
